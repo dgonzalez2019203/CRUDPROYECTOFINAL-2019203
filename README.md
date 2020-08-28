@@ -5,7 +5,7 @@ Para poder evitar la pérdida de información y borrar datos por accidente estem
 
 Ser puntuales en la entrega de cada asignación para que nuestros demás compañeros no se atrasen.
 
-Este grupo está conformado por:
+Este grupo está conformado por :
 
 
 2019202    Angel Ricardo        García Zuñiga           Desarrollador
