@@ -11,7 +11,7 @@ Este grupo está conformado por :
 2019202    Angel Ricardo        García Zuñiga           Desarrollador 
 2019063    José David           Góngora Olmedo          Desarrollador Crear aplicación y estructura
 2019203    Diego Fernando       González González       SCRUM MASTER    Diseño de la pagina
-2018501    José Javier          Hernández Barker        Desarrollador
+2018501    José Javier          Hernández Barker        Desarrollador Vistas de la aplicación JSP, XML y java. (listar)
 2019037    Angel Andres         Herrarte Lorenzana      Desarrollador
 2019108    Jonatan Josué        Ixpanel Panjoj          Desarrollador
 2016308    Marcos Javier        Loarca González         Desarrollador Implementación de la Interfaz
