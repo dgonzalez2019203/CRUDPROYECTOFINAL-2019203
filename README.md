@@ -1,4 +1,4 @@
-# CRUDPROYECTOFINAL-2019203Repositorio para proyecto 2020 CRUDPROYECTOFINAL sección IN5BM
+p# CRUDPROYECTOFINAL-2019203Repositorio para proyecto 2020 CRUDPROYECTOFINAL sección IN5BM
 
 En este repositorio se podrán subir todas las actualizaciones del proyecto. Por favor tener mucho cuidado al momento de hacer alguna acción.
 Para poder evitar la pérdida de información y borrar datos por accidente estemos atentos a todo lo que realicemos.
@@ -12,7 +12,7 @@ Este grupo está conformado por :
 2019063    José David           Góngora Olmedo          Desarrollador Crear aplicación y estructura
 2019203    Diego Fernando       González González       SCRUM MASTER    Diseño de la pagina
 2018501    José Javier          Hernández Barker        Desarrollador Vistas de la aplicación JSP, XML y java. (listar)
-2019037    Angel Andres         Herrarte Lorenzana      Desarrollador
+2019037    Angel Andres         Herrarte Lorenzana      Desarrollador Crear las vistas de la aplicación JSP, XML y java. (editar)
 2019108    Jonatan Josué        Ixpanel Panjoj          Desarrollador
 2016308    Marcos Javier        Loarca González         Desarrollador Implementación de la Interfaz
 2019044    José Leonel          López Ajvix             Desarrollador Conexión a la Base de Datos
