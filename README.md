@@ -18,5 +18,5 @@ Este grupo está conformado por :
 2019044    José Leonel          López Ajvix             Desarrollador
 2019098    Sergio Daniel        Mayen Hernández         Desarrollador Controlador (implementar servlet de operaciones)
 2016537    Jonadab Waldemar     Meléndrez Montenegro    Desarrollador
-2018499    Pedro Alejandro      Menendez Palma          Desarrollador
+2018499    Pedro Alejandro      Menendez Palma          Desarrollador Modelo DAO 
 2019015    Miguel Angel         Monroy Ruano            Desarrollador
