@@ -14,7 +14,7 @@ Este grupo está conformado por :
 2018501    José Javier          Hernández Barker        Desarrollador
 2019037    Angel Andres         Herrarte Lorenzana      Desarrollador
 2019108    Jonatan Josué        Ixpanel Panjoj          Desarrollador
-2016308    Marcos Javier        Loarca González         Desarrollador
+2016308    Marcos Javier        Loarca González         Desarrollador Implementación de la Interfaz
 2019044    José Leonel          López Ajvix             Desarrollador
 2019098    Sergio Daniel        Mayen Hernández         Desarrollador Controlador (implementar servlet de operaciones)
 2016537    Jonadab Waldemar     Meléndrez Montenegro    Desarrollador
