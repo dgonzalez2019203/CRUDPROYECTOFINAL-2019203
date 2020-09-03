@@ -1,6 +1,6 @@
 # CRUDPROYECTOFINAL-2019203Repositorio para proyecto 2020 CRUDPROYECTOFINAL sección IN5BM
 
-En este repositorio se podrán subir todas las actualizaciones del proyecto. Por favor tener mucho cuidado al momento de hacer alguna acción.
+En este repositorio se podrán subir todas las actualizaciones del trabajo sobre todas las habilidades aprendidas en esta ultima unidad. Por favor tener mucho cuidado al momento de hacer alguna acción.
 Para poder evitar la pérdida de información y borrar datos por accidente estemos atentos a todo lo que realicemos.
 
 Ser puntuales en la entrega de cada asignación para que nuestros demás compañeros no se atrasen.
