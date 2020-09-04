@@ -17,6 +17,6 @@ Este grupo está conformado por :
 2016308    Marcos Javier        Loarca González         Desarrollador Implementación de la Interfaz
 2019044    José Leonel          López Ajvix             Desarrollador Conexión a la Base de Datos
 2019098    Sergio Daniel        Mayen Hernández         Desarrollador Controlador (implementar servlet de operaciones)
-2016537    Jonadab Waldemar     Meléndrez Montenegro    Desarrollador
+2016537    Jonadab Waldemar     Meléndrez Montenegro    Desarrollador Modelo
 2018499    Pedro Alejandro      Menendez Palma          Desarrollador Modelo DAO 
 2019015    Miguel Angel         Monroy Ruano            Desarrollador
