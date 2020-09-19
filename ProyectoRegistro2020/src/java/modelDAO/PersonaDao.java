@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import model.Persona;
 
-public class PersonaDao implements CRUD{
+public class PersonaDAO implements CRUD{
     Conexion conect = new Conexion();
     Connection con;
     PreparedStatement ps;
@@ -22,7 +22,7 @@ public class PersonaDao implements CRUD{
 		String sql = "select * from persona";
 		try{
 			con = conect.getConection();
-			ps = con.PreparedStatement(sql);
+			ps = con.prepareStatement(sql);
 			rs = ps.executeQuery();
 			while(rs.next()){
 				Persona nuevaPersona = new Persona();
@@ -64,7 +64,7 @@ public class PersonaDao implements CRUD{
 	}
 	
 	@Override
-	public boolean eliminar(int id){
+	public boolean eliminar(Persona id){
 		String sql = "delete from persona where codigoPersona="+id;
 		try{
 			con = conect.getConection();
@@ -76,4 +76,23 @@ public class PersonaDao implements CRUD{
 		}
 		return false;
 	}
+        
+            @Override
+    public Persona list(int id) {
+        String sql = "select * from persona where codigoPersona"+id;
+        try{
+            con = conect.getConection();
+            ps = con.prepareStatement(sql);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                nPersona.setCodigoPersona(rs.getInt("CodigoPersona"));
+                nPersona.setDPI(rs.getString("nombrePersona"));
+                nPersona.setNombrePersona(rs.getString("nombrePersona"));
+            }
+            
+        }catch(Exception e){
+            e.printStackTrace();
+    }
+        return nPersona;
+    }
 }
