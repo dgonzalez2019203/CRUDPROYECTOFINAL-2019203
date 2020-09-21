@@ -26,8 +26,8 @@
                 <strong>
                 Nombre
                 </strong>
-                <input type="text" name="txtNombre" value="<%= persona.getNombre()%>"><br><br>    
-                <input type="hidden" name="txtIdPersona" value="<%= persona.getId_Persona()%>"><br><br>  
+                <input type="text" name="txtNombre" value="<%= persona.getNombrePersona()%>"><br><br>    
+                <input type="hidden" name="txtCodigoPersona" value="<%= persona.getCodigoPersona()%>"><br><br>  
                 <input type="submit" name="accion" value="Actualizar"><br>
             </form>
             </div>
