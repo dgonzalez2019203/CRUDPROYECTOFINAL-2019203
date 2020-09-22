@@ -12,9 +12,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Página Principal</h1><br>
+        <h1>Página Principal</h1>
+        <br>
         <div>
-            <a>Listar Personas</a>
+            <a hrev= "Controlador?accion=listar"Listar Personas</a>
         </div>
     </body>
 </html>
