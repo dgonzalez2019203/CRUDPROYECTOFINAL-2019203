@@ -79,14 +79,14 @@ public class PersonaDAO implements CRUD{
         
             @Override
     public Persona list(int id) {
-        String sql = "select * from persona where codigoPersona"+id;
+        String sql = "select * from persona where codigoPersona="+id;
         try{
             con = conect.getConection();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while(rs.next()){
                 nPersona.setCodigoPersona(rs.getInt("CodigoPersona"));
-                nPersona.setDPI(rs.getString("nombrePersona"));
+                nPersona.setDPI(rs.getString("DPI"));
                 nPersona.setNombrePersona(rs.getString("nombrePersona"));
             }
             
