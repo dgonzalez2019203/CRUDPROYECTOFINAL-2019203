@@ -15,9 +15,9 @@ import modelDAO.PersonaDAO;
 @WebServlet(name = "Controlador", urlPatterns = {"/Controlador"})
 public class Controlador extends HttpServlet {
 
-    String  listar = "view/listar.jsp";
-    String add = "view/add.jsp";
-    String editar = "view/editar.jsp";
+    String listar = "./view/listar.jsp";
+    String add = "./view/add.jsp";
+    String edit = "./view/editar.jsp";
     Persona nuevaPersona = new Persona();
     PersonaDAO nuevaPersonaDao = new PersonaDAO();
     int codigoPersona;
@@ -41,76 +41,53 @@ public class Controlador extends HttpServlet {
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
         
         String acceso = "";
         String action = request.getParameter("accion");
-        if(action.equalsIgnoreCase("listar")){
-                acceso = listar;
-            } else if(action.equalsIgnoreCase("add")){
-                acceso = add;
-            }else if(action.equalsIgnoreCase("Agregar")){
-                String DPI = request.getParameter("txtDPI");
-            String nombre = request.getParameter("txtNombre");
-            nuevaPersona.setDPI(DPI);
-            nuevaPersona.setNombrePersona(nombre);
-            nuevaPersonaDao.add(nuevaPersona);
-                acceso = listar;
-            }else if(action.equalsIgnoreCase("editar")){    
-                request.setAttribute("codPer",request.getParameter("codigoPersona"));
-                acceso = editar;
-                }else if(action.equalsIgnoreCase("Actualizar")){
-            codigoPersona = Integer.parseInt(request.getParameter("txtCodigoPersona"));
-            String DPI = request.getParameter("txtDPI");
-            String nombres = request.getParameter("txtNombre");
-            nuevaPersona.setCodigoPersona(codigoPersona);
-            nuevaPersona.setDPI(DPI);
-            nuevaPersona.setNombrePersona(nombres);
-            nuevaPersonaDao.edit(nuevaPersona);
-            acceso = listar;
-            
-        }else if(action.equalsIgnoreCase("eliminar")){
-            codigoPersona = Integer.parseInt(request.getParameter("codigoPersona"));
-            nuevaPersona.setCodigoPersona(codigoPersona);
-            nuevaPersonaDao.eliminar(nuevaPersona);
-            acceso = listar;
-        }
+            if(action.equalsIgnoreCase("listar")){
+                    acceso = listar;
+                } else if(action.equalsIgnoreCase("add")){
+                    acceso = add;
+                        }else if(action.equalsIgnoreCase("Agregar")){
+                            String DPI = request.getParameter("txtDPI");
+                            String nombre = request.getParameter("txtNombre");
+                            nuevaPersona.setDPI(DPI);
+                            nuevaPersona.setNombrePersona(nombre);
+                            nuevaPersonaDao.add(nuevaPersona);
+                            acceso = listar;
+                                }else if(action.equalsIgnoreCase("editar")){    
+                                    request.setAttribute("codPer",request.getParameter("codigoPersona"));
+                                    acceso = edit;
+                                    }else if(action.equalsIgnoreCase("Actualizar")){
+                                        codigoPersona = Integer.parseInt(request.getParameter("txtCodigoPersona"));
+                                        String DPI = request.getParameter("txtDPI");
+                                        String nombres = request.getParameter("txtNombre");
+                                        nuevaPersona.setCodigoPersona(codigoPersona);
+                                        nuevaPersona.setDPI(DPI);
+                                        nuevaPersona.setNombrePersona(nombres);
+                                        nuevaPersonaDao.edit(nuevaPersona);
+                                        acceso = listar;
+                                            }else if(action.equalsIgnoreCase("eliminar")){
+                                                codigoPersona = Integer.parseInt(request.getParameter("codigoPersona"));
+                                                nuevaPersona.setCodigoPersona(codigoPersona);
+                                                nuevaPersonaDao.eliminar(nuevaPersona);
+                                                acceso = listar;
+                                            }
 
-            
         RequestDispatcher vista = request.getRequestDispatcher(acceso);
         vista.forward(request, response);
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
-
-    
-
-    
     @Override
     public String getServletInfo() {
         return "Short description";

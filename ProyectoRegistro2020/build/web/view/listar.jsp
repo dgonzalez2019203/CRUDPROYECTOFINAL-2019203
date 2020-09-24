@@ -1,9 +1,3 @@
-<%-- 
-    Document   : listar
-    Created on : 11/09/2020, 06:48:41 PM
-    Author     : Barker
---%>
-
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page import="model.Persona"%>
@@ -13,21 +7,28 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-reboot.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <title>Listar Registro</title>
     </head>
-    <body>
-        <div>
-           <h1>Datos de La Entidad Persona</h1> 
-           <a href="Controlador?accion=add">Agregar Registro</a>
-           <br><br>
-           <table border="1">
+    <body style="background: #eeeeee">
+       <a class="btn btn-info active btn-lg btn-block" style="position: absolute; right: 0; top: 0; padding: 50px; height: 10vh;" href="index.jsp">Regresar</a>
+        <div class="container">
+           <h1 class="text-center font-weight-light display-2 text-uppercase" style="margin: 120px">Datos de La Entidad Persona</h1> 
+           <table class="table table-dark table-bordered table-hover " style="font-size: 20px; box-shadow: 5px 5px 9px #4B515D ">
                <thead>
-                  
                    <tr>
-                       <td>Código Persona</td>
-                       <td>DPI</td>
-                       <td>Nombres</td>
-                       <td>Acciones</td>
+                       <td class="text-center text-success text-uppercase"><strong>Código Persona</strong></td>
+                       <td class="text-center text-success text-uppercase "><strong>DPI</strong></td>
+                       <td class="text-center text-success text-uppercase "><strong>Nombres</strong></td>
+                       <td class="text-center text-success text-uppercase "><strong>Acciones</strong></td>
                    </tr>                       
                </thead>
                 <%
@@ -41,17 +42,19 @@
                        %>
                <tbody>
                    <tr>
-                       <td><%= per.getCodigoPersona() %></td>
-                       <td><%= per.getDPI() %></td>
-                       <td><%= per.getNombrePersona() %></td>
-                       <td>
-                           <a href="Controlador?accion=editar&codigoPersona=<%=per.getCodigoPersona()%>">Editar</a>
-                           <a href="Controlador?accion=eliminar&codigoPersona=<%=per.getCodigoPersona()%>">Eliminar</a>
+                       <td class="text-center"><%= per.getCodigoPersona()%></td>
+                       <td class="text-center"><%= per.getDPI()%></td>
+                       <td class="text-center"><%= per.getNombrePersona()%></td>
+                       <td class="text-center">
+                       <a class="btn btn-warning" style="margin-right: 30px" href="Controlador?accion=editar&codigoPersona=<%=per.getCodigoPersona()%>">Editar</a>
+                       <a class="btn btn-danger" " href="Controlador?accion=eliminar&codigoPersona=<%=per.getCodigoPersona()%>">Eliminar</a>
                        </td>
                    </tr>
-                    <% }%>
+                    <% } %>
                </tbody>
            </table>
+               <br>
+            <a class="btn btn-outline-success btn-lg btn-block" href="Controlador?accion=add">Agregar Registro </a>
         </div>
     </body>
 </html>

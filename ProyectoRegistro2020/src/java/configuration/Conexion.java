@@ -12,7 +12,7 @@ public class Conexion {
         try{
             
             Class.forName("com.mysql.jdbc.Driver");
-            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/DBRegistroProyecto?useSSL=false","root","root");
+            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/DBRegistroProyecto?useSSL=false","root","Fernando2003");
             
         }catch(Exception e){
             e.printStackTrace();
