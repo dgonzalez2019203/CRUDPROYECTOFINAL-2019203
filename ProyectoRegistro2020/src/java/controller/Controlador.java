@@ -73,7 +73,7 @@ public class Controlador extends HttpServlet {
                                             }else if(action.equalsIgnoreCase("eliminar")){
                                                 codigoPersona = Integer.parseInt(request.getParameter("codigoPersona"));
                                                 nuevaPersona.setCodigoPersona(codigoPersona);
-                                                nuevaPersonaDao.eliminar(nuevaPersona);
+                                                nuevaPersonaDao.eliminar(codigoPersona);
                                                 acceso = listar;
                                             }
 

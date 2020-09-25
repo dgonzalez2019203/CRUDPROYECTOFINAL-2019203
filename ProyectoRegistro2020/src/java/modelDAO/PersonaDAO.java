@@ -63,30 +63,30 @@ public class PersonaDAO implements CRUD{
 		return false;
 	}
 	
-	@Override
-	public boolean eliminar(Persona id){
-		String sql = "delete from persona where codigoPersona="+id;
-		try{
-			con = conect.getConection();
-			ps = con.prepareStatement(sql);
-			ps.executeUpdate();
-		}catch(Exception e){
-			e.printStackTrace();
-			
-		}
-		return false;
-	}
+@Override
+    public boolean eliminar(int id) {
+        String sql = "delete from persona where codigoPersona ="+id;
+        try{
+            con = conect.getConection();
+            ps = con.prepareStatement(sql);
+            ps.executeUpdate();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return false;
+    }
         
             @Override
     public Persona list(int id) {
-        String sql = "select * from persona where codigoPersona"+id;
+        String sql = "select * from persona where codigoPersona="+id;
         try{
             con = conect.getConection();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while(rs.next()){
                 nPersona.setCodigoPersona(rs.getInt("CodigoPersona"));
-                nPersona.setDPI(rs.getString("nombrePersona"));
+                nPersona.setDPI(rs.getString("DPI"));
                 nPersona.setNombrePersona(rs.getString("nombrePersona"));
             }
             
